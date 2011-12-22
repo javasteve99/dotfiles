@@ -38,8 +38,8 @@
   rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
 
 [user]
-  name = Kyle Fiedler
-  email = kfiedler@thoughtbot.com
+  name = Steve Hickey
+  email = steve@thoughtbot.com
 [branch "master"]
   rebase = true
 [remote "origin"]
