@@ -59,3 +59,8 @@ Then, each time you want to update thoughtbot's changes.
     git checkout master
     git rebase upstream
 
+Make git submodules to pull in necessary files
+----------------------------------------------------
+
+    git submodule init
+    git submodule update
