@@ -39,7 +39,7 @@
 
 [user]
   name = Steve Hickey
-  email = steve@thoughtbot.com
+  email = steve.hickey@freshtilledsoil.com
 [branch "master"]
   rebase = true
 [remote "origin"]
