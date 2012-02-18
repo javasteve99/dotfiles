@@ -51,3 +51,6 @@ alias sasswb='sass --watch stylesheets/sass:stylesheets -r ./stylesheets/sass/bo
 
 # Jekyll
 alias jeks='jekyll --server --auto'
+
+# Stupid Shit
+alias dub='yes "wub" | xargs say -v alex'
