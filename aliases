@@ -1,8 +1,5 @@
 # ~/.aliases
 
-alias start_redis='redis-server /usr/local/etc/redis.conf'
-alias start_memcached='memcached -vv'
-alias memcached='/usr/local/bin/memcached -d' # start memcached daemon
 alias b="bundle"
 alias be='bundle exec'
 alias bake='bundle exec rake'
@@ -13,44 +10,33 @@ alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
 alias s="bundle exec rspec"
 alias gi="gem install"
 alias giv="gem install -v"
-alias tlf="tail -f"
-
-alias clearlog='cat /dev/null > log/cucumber.log > log/development.log'
 
 # Git shortcuts
 alias g='git'
 alias got='git'
 alias get='git'
 
-alias ga='git add -A'
-alias gb='git branch'
-alias gac='git commit -am'
-alias gc='git commit -m'
-alias gci="git pull --rebase && git push"
-alias gd='git diff'
-alias gdx='git diff | gitx'
-alias gf='git fetch'
-alias go='git checkout'
-alias gpr='git pull --rebase'
-alias gpu='git push'
-#alias gr='git rebase'
-alias gs='git status'
-alias gx='gitx --all'
-
 # Other
 alias ln='ln -v'
 alias mkdir='mkdir -p'
-alias ...='../..'
+alias ..="cd .."
+alias ...="cd ../.."
+alias cdp="cd ~/Projects"
+alias cds="cd ~/Sites"
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
 
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
 # Sass
-alias sassw='sass --watch stylesheets/sass:stylesheets -r'
+alias sassw='sass --watch stylesheets/sass:stylesheets'
 alias sasswb='sass --watch stylesheets/sass:stylesheets -r ./stylesheets/sass/bourbon/lib/bourbon.rb'
 
 # Jekyll
 alias jeks='jekyll --server --auto'
 
-# Stupid Shit
+# Stupid stuff
 alias dub='yes "wub" | xargs say -v alex'
