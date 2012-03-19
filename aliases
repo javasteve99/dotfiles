@@ -21,15 +21,17 @@ alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ..="cd .."
 alias ...="cd ../.."
-alias cdp="cd ~/Projects"
-alias cds="cd ~/Sites"
+alias cdp='cd ~/Projects'
+alias cds='cd ~/Sites'
+alias cdd='cd ~/Desktop'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
 
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+# Finder
+alias show='defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder'
+alias hide='defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder'
+alias killFinder='killall Finder && open /System/Library/CoreServices/Finder.app'
 
 # Sass
 alias sassw='sass --watch stylesheets/sass:stylesheets'
