@@ -34,8 +34,10 @@ alias hide='defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 alias killFinder='killall Finder && open /System/Library/CoreServices/Finder.app'
 
 # Sass
-alias sassw='sass --watch stylesheets/sass:stylesheets'
-alias sasswb='sass --watch stylesheets/sass:stylesheets -r ./stylesheets/sass/bourbon/lib/bourbon.rb'
+alias swapp='sass --watch stylesheets/sass:stylesheets'
+alias swsite='sass --watch css/sass:css'
+alias swbapp='sass --watch stylesheets/sass:stylesheets -r ./stylesheets/sass/bourbon/lib/bourbon.rb'
+alias swbsite='sass --watch css/sass:css -r ./css/sass/bourbon/lib/bourbon.rb'
 
 # Jekyll
 alias jeks='jekyll --server --auto'
