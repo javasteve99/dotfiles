@@ -1,5 +1,11 @@
 # ADD LOCAL CONFIGURATION HERE
-
+[user]
+  name = Steve Hickey
+  email = steve@stevehickeydesign.com
+[branch "master"]
+  rebase = true
+[remote "origin"]
+  push = HEAD
 
 # DO NOT EDIT BELOW THIS LINE
 [push]
@@ -36,11 +42,3 @@
   unfuck = reset --hard HEAD
   cob = checkout -b
   rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
-
-[user]
-  name = Steve Hickey
-  email = steve@stevehickeydesign.com
-[branch "master"]
-  rebase = true
-[remote "origin"]
-  push = HEAD
